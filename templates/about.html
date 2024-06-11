@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>О нас</title>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .logo {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .nav-buttons {
+            margin-right: 20px;
+        }
+        .nav-buttons button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .nav-buttons button:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px 0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #007bff;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .team-member {
+            flex: 1 1 calc(33% - 20px);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo" onclick="location.href='/'">
+        <img src="logo.png" alt="Главная" width="50" height="50">
+    </div>
+    <div class="nav-buttons">
+        <button onclick="location.href='tests'">Тесты</button>
+        <button onclick="location.href='about'">О нас</button>
+        <button onclick="location.href='contacts'">Контакты</button>
+    </div>
+</div>
+
+<div class="container">
+    <h1>О нас</h1>
+    <div class="section">
+        <h2>Суть проекта</h2>
+        <p>Веб-сервис создавался в качестве дипломной работы по направлению бакалавриата. Одними из основных задач были понятная структура сайта и приятное оформление, надеемся у нас получилось. Пользуйтесь на здоровье!</p>
+    </div>
+    <div class="section">
+        <h2>Наша миссия</h2>
+        <p>Мы стремимся помочь школьникам 10-11 классов найти свой путь в жизни и сделать правильный выбор профессии. Наш сервис предоставляет персонализированные рекомендации на основе анализа ваших интересов, способностей и личностных характеристик, используя передовые технологии нейронных сетей.</p>
+    </div>
+    <div class="section">
+        <h2>Что мы предлагаем</h2>
+        <p>Наш веб-сервис включает в себя тесты на профориентацию и рекомендации по выбору учебных заведений и профессий.</p>
+    </div>
+    <div class="section">
+        <h2>Наши ценности</h2>
+        <p>Мы верим в важность индивидуального подхода, инноваций и постоянного улучшения. Наша цель – создать лучший сервис для профориентации, который будет полезен каждому школьнику, помогая ему найти свое призвание и достичь успеха в жизни.</p>
+    </div>
+</div>
+
+</body>
+</html>

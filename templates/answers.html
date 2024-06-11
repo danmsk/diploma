@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<fieldset>
+    <legend>TESTS</legend>
+    {{range .}}
+    <div>
+        <input type="radio" value="{{ .Id }}" name="tests"  />{{ .Id }} {{ .Label }}
+    </div>
+    {{end}}
+</fieldset>
+<form action="deleteTest" method="POST">
+    <label>Что удалить?</label>
+    <input type="number" name="value" required>
+    <input type="submit" value="DELETE">
+</form>
+</body>
+</html>

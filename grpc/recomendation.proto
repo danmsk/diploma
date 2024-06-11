@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "profile.grpc";
+
+service ProfileService {
+  rpc GetRecommendations (ProfileRequest) returns (ProfileResponse);
+}
+
+message ProfileRequest {
+  repeated int32 profile = 1;
+}
+
+message ProfileResponse {
+  repeated string recommendations = 1;
+}
